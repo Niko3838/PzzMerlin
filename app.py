@@ -59,6 +59,11 @@ def page_not_authorized(error):
 def index():
     return redirect(url_for('principal'))
 
+#--------------------------------------------------------------------------------------
+
+@app.route('/base')
+def base():
+    return render_template("base.html")
 
 #--------------------------------------------------------------------------------------
 

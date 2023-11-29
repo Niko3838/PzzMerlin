@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pizzeria Merlin</title>
+    
+    <!-- Importar Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .header-background {
+            background-color: #8B0000; /* Código de color para el vino tinto */
+            color: white; /* Color de texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-white">
+        <hr class="wine-divider" style="border: 4px solid #8B0000;">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#8B0000">
+            <div class="container">
+            <a class="navbar-brand" href="/principal" style="color: rgb(255, 255, 255)">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pedidos" style="color: rgb(255, 255, 255);">
+                               <i class="fas fa-box"></i> Pedidos
+                            </a>
+                         </li>
+                         
+                        <li class="nav-item">
+                            <a class="nav-link" href="/registro" style="color: rgb(255, 255, 255)"> Registrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/registros" style="color: rgb(255, 255, 255)"> Ver Registros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <hr class="wine-divider" style="border: 4px solid #8B0000;">
+
+
+        
+    </div>
+    
+    
+    <!-- Encabezado con imagen de fondo -->
+    <header>
+       
+        <br><br><br><br><br><br><br><br><br><br>
+
+    </header>
+
+
+
+
+
+    <hr class="wine-divider" style="border: 4px solid #8B0000;">
+
+
+    <!-- Información de contacto -->
+    <section class=" text-white" style="background-color: #8B0000">
+        <br>
+        <h2 class="text-center">Contactos</h2> 
+        <br>
+        <address>
+            <div class="container">  
+                <div class="row ">
+                    <div class="col-md-4" >
+                        <p><strong>Dirección:</strong></p>
+                        <p>Carrera 4 # 14-42 San Felipe Ipiales</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Teléfono:</strong></p>
+                        <p>(+57) 313 6083907</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Correo Electrónico:</strong></p>
+                        <p>rosalinbc@hotmail.com</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </address>
+    </section>
+
+    <hr class="wine-divider" style="border: 4px solid #8B0000;">
+    
+    </div>
+
+</body>
+</html>
