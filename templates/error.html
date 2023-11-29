@@ -1,38 +1,33 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404 - Página no encontrada</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa; /* Color de fondo */
-        }
+{% extends 'base.html'%}
 
-        .error-container {
-            text-align: center;
-            margin-top: 50px;
-        }
+{% block contenido %}
 
-        .error-image {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="error-container">
-            <hr class="wine-divider" style="border: 4px solid #8B0000;">
-            <h1 class="mt-4">Error 404</h1>
-            <hr class="wine-divider" style="border: 4px solid #8B0000;">
-            <p class="lead">Lo sentimos, la página que estás buscando no se encuentra. Merlin</p>
-            <img src="{{ url_for('static', filename='img/error_404.jfif') }}" alt="Mi Imagen" class="img-fluid">
-            <br><br>
-            <a href="/" class="btn btn-primary">Volver a la página principal</a>
-            <hr class="wine-divider" style="border: 4px solid #8B0000;">
-        </div>
+<div class="container">
+    <div class="error-container">
+        <h1 class="mt-4">Error 404</h1>
+        <p class="lead">Lo sentimos, la página que estás buscando no se encuentra. Merlin</p>
+        <img src="{{ url_for('static', filename='img/error_404.jfif') }}" alt="Mi Imagen" class="img-fluid">
+        <br><br>
+        <a href="/" class="btn btn-primary">Volver a la página principal</a>
     </div>
-</body>
-</html>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa; /* Color de fondo */
+    }
+
+    .error-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .error-image {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+{% endblock%}
+
+
