@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+}
+
+
+.background-image {
+    background-image: url("{{ url_for('static', filename='img/letrero.jfif') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    color: white; /* Ajusta el color de texto si es necesario */
+    text-align: center;
+    padding-top: 100px; /* Ajusta el espaciado superior según tus necesidades */
+}
+.header-background {
+    background-color: #8B0000; /* Código de color para el vino tinto */
+    color: white; /* Color de texto */
+}

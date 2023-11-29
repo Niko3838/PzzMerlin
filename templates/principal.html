@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merlin</title>
+    
+    <!-- Importar Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .header-background {
+            background-color: #8B0000; /* Código de color para el vino tinto */
+            color: white; /* Color de texto */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <hr class="wine-divider" style="border: 4px solid #8B0000;">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(255, 255, 255);">
+            <a class="navbar-brand" href="/principal" style="color: red;">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedidos" style="color: red;">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registro" style="color: red;">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registros" style="color: red;">Ver Registros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <!-- Encabezado con imagen de fondo -->
+    <header class="jumbotron jumbotron-fluid text-center header-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-11 mx-auto">
+                    <div class="card">
+                        <div class="card-body text-dark">
+                            <br>
+                            <h1 class="text-center">Bienvenidos a Pizzeria Merlin</h1>
+                            <div class="card-body text-dark">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <br><br><br>
+                                        <p>Te ofrecemos lo mejor de la comida rápida y las pizzas más irresistibles. Nuestro ambiente te hará sentir como en casa mientras te entregamos sabor y calidad en cada bocado. ¡Te esperamos para que disfrutes de una experiencia única!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="{{ url_for('static', filename='img/merlin.jfif') }}" alt="Mi Imagen" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="wine-divider" style="border: 4px solid #ffffff;">
+    
+       <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='img/hw.jfif') }}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{ url_for('static', filename='img/carne.jfif') }}"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{ url_for('static', filename='img/tropical.jfif') }}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       </div>
+        
+    </header>
+    <hr class="wine-divider" style="border: 4px solid #8B0000;">
+
+
+    <!-- Información de contacto -->
+    <section class="container my-5">
+        <h2 class="text-center">Contactos</h2>
+        <address>
+            <div class="row">
+                <div class="col-md-4">
+                    <p><strong>Dirección:</strong></p>
+                    <p>Calle 7 # 3_116 Gólgota Ipiales</p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Teléfono:</strong></p>
+                    <p>(+57) 313 6083907</p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Correo Electrónico:</strong></p>
+                    <p>rosalinbc@hotmail.com</p>
+                </div>
+            </div>
+        </address>
+    </section>
+
+    <hr class="wine-divider" style="border: 4px solid #8B0000;">
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola, que tal
+    {% if nombre is not none -%}
+        {{nombre}}
+    {% else -%}
+        Desconocido
+    {% endif -%}
+    </title>
+    
+</head>
+<body>
+    <header>
+        <h1>Website by Nixon </h1>
+        <h1>Bienvenidos</h1>
+    </header>
+    <h2>Vamos a saludar</h2>
+    {% if nombre -%}
+        <h1>Hola {{nombre|title}}</h1>
+        <p>Como estas</p>
+    {% else -%}
+        <p>No has indicado un nombre</p>
+    {% endif -%}
+
+    <!--Se debe ingresar el nombre en el navegador /Nixon-->
+</body>
+</html>

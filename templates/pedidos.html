@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Tipos de Pizzas</title>
+  <style>
+    body {
+      background-color: #f8f9fa; /* Un color de fondo claro para resaltar las tarjetas */
+    }
+
+    .card {
+      background-color: #800020; /* Color vino tinto para las tarjetas */
+      color: #fff; /* Texto blanco para contrastar */
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      color: #fff; /* Color blanco para el título de la tarjeta */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+    <hr class="wine-divider" style="border: 4px solid #8B0000;">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(255, 255, 255);">
+            <a class="navbar-brand" href="/principal" style="color: red;">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedidos" style="color: red;">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registro" style="color: red;">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registros" style="color: red;">Ver Registros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+  <div class="row">
+
+    <!-- Tarjeta 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/hw.jfif') }}" class="card-img-top" alt="Pizza Margarita">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Hawaiana</h5>
+          <p class="card-text">La pizza hawaiana es una pizza que contiene una base de salsa pomodoro, queso mozzarella fundido y como toppings jamón y piña.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/carne.jfif') }}" class="card-img-top" alt="Pizza Pepperoni">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Carne</h5>
+          <p class="card-text">Una deliciosa pizza con salsa de tomate, queso, y rodajas de pepperoni.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/tropical.jfif') }}" class="card-img-top" alt="Pizza Hawaiana">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Tropical</h5>
+          <p class="card-text">Una combinación tropical de piña, jamón y queso en una deliciosa pizza.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
