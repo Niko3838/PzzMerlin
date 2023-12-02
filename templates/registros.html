@@ -6,30 +6,31 @@
     <div class="card">
         <div class="card-body">
             <h1 class="card-title text-center">Registros de Clientes Merlin</h1>
-            <table class="table table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Cédula</th>
-                        <th>Nombres</th>
-                        <th>Celular</th>
-                        <th>Dirección</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for registro in registros %}
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
                         <tr>
-                            <td>{{ registro.cedula }}</td>
-                            <td>{{ registro.nombres }}</td>
-                            <td>{{ registro.celular }}</td>
-                            <td>{{ registro.direccion }}</td>
+                            <th>Cédula</th>
+                            <th>Nombres</th>
+                            <th>Celular</th>
+                            <th>Dirección</th>
                         </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {% for registro in registros %}
+                            <tr>
+                                <td>{{ registro.cedula }}</td>
+                                <td>{{ registro.nombres }}</td>
+                                <td>{{ registro.celular }}</td>
+                                <td>{{ registro.direccion }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
-
 
 <style>
     body {
@@ -60,9 +61,6 @@
         background-color: #BD0D0D; /* Cambia el color de fondo del encabezado según tus preferencias */
     }
 </style>
-
-
-
 
 {% endblock %}
 

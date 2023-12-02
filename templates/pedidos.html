@@ -28,7 +28,7 @@
     <!-- Tarjeta 1 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="{{ url_for('static', filename='img/hw.jfif') }}" class="card-img-top" alt="Pizza Margarita">
+        <img src="{{ url_for('static', filename='img/hw.jfif') }}" class="card-img-top" alt="Pizza Hawaiana">
         <div class="card-body">
           <h5 class="card-title">Pizza Hawaiana</h5>
           <p class="card-text">La pizza hawaiana es una pizza que contiene una base de salsa pomodoro, queso mozzarella fundido y como toppings jamón y piña.</p>
@@ -39,7 +39,7 @@
     <!-- Tarjeta 2 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="{{ url_for('static', filename='img/carne.jfif') }}" class="card-img-top" alt="Pizza Pepperoni">
+        <img src="{{ url_for('static', filename='img/carne.jfif') }}" class="card-img-top" alt="Pizza Carne">
         <div class="card-body">
           <h5 class="card-title">Pizza Carne</h5>
           <p class="card-text">Una deliciosa pizza con salsa de tomate, queso, y rodajas de pepperoni.</p>
@@ -50,7 +50,7 @@
     <!-- Tarjeta 3 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="{{ url_for('static', filename='img/tropical.jfif') }}" class="card-img-top" alt="Pizza Hawaiana">
+        <img src="{{ url_for('static', filename='img/tropical.jfif') }}" class="card-img-top" alt="Pizza Tropical">
         <div class="card-body">
           <h5 class="card-title">Pizza Tropical</h5>
           <p class="card-text">Una combinación tropical de piña, jamón y queso en una deliciosa pizza.</p>
@@ -58,7 +58,99 @@
       </div>
     </div>
 
+    <!-- Tarjeta 4 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/vegetariana.jfif') }}" class="card-img-top" alt="Pizza Vegetariana">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Vegetariana</h5>
+          <p class="card-text">Una opción saludable con una variedad de vegetales frescos y queso derretido.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/mexicana.jfif') }}" class="card-img-top" alt="Pizza Mexicana">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Mexicana</h5>
+          <p class="card-text">Una explosión de sabores con jalapeños, carne picada y salsa picante.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/pepperoni.jfif') }}" class="card-img-top" alt="Pizza Pepperoni">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Pepperoni</h5>
+          <p class="card-text">La clásica pizza con abundantes rodajas de pepperoni y queso derretido.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 7 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/margarita.jfif') }}" class="card-img-top" alt="Pizza Margarita">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Margarita</h5>
+          <p class="card-text">Una pizza simple y deliciosa con tomate, mozzarella fresca y albahaca.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agrega más tarjetas según sea necesario -->
+
   </div>
+</div>
+<div class="container">
+
+  <!-- Encabezado con imagen de fondo -->
+  <header class="jumbotron jumbotron-fluid text-center header-background">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-11 mx-auto">
+                  <div class="card">
+                      <div class="card-body text-dark">
+                          <br>
+                          <h1 class="text-center">Realiza tu Pedido</h1>
+                          <div class="card-body text-dark">
+                              <div class="row">
+                                  <div class="col-md-9">
+                                      <br><br><br>
+                                      <p>¡Selecciona tus pizzas favoritas y realiza tu pedido ahora! Te garantizamos calidad y sabor en cada una de nuestras creaciones.</p>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <img src="{{ url_for('static', filename='img/pedido.jfif') }}" alt="Pedido" class="img-fluid">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <hr class="wine-divider" style="border: 4px solid #ffffff;">
+
+      <!-- Contenido de la sección de pedidos -->
+      <div class="container">
+          <!-- Aquí puedes agregar el formulario o la información específica de la sección de pedidos -->
+          <!-- Por ejemplo, un formulario con campos para seleccionar las pizzas, cantidad, etc. -->
+          <form action="/realizar-pedido" method="post">
+              <!-- Campos del formulario -->
+              <!-- ... -->
+
+              <!-- Botón para enviar el pedido -->
+              <button type="submit" class="btn btn-primary">Realizar Pedido</button>
+          </form>
+      </div>
+
+  </header>
+
 </div>
 
 
